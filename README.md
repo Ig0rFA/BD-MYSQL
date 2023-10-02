@@ -8,15 +8,14 @@ Atividades solicitadas em sala de aula para avaliaçao.
  Os itens: nome; preço; estoque; perecível não poderão receber valores nulos;
  O id_produto deve ser utilizado como chave-primaria.
 
-
- ![exer1]()
+ ![exer1](https://github.com/Ig0rFA/BancoDeDadosMySQL/blob/main/AC2%20Print/AC2%20Tabela.png)
  
 /*Após a criação insira cinco produtos, todos devem ter seus respectivos campos
 preenchidos;
-Verifique se todos os dados foram inseridos;
-Ao término inicie a segunda etapa.*/
 
-![exer2]()
+![exer2](https://github.com/Ig0rFA/BancoDeDadosMySQL/blob/main/AC2%20Print/AC2%20ProdutosAtributos.png)
+
+Verifique se todos os dados foram inseridos;
 
 ![exer3]()
 
@@ -25,13 +24,13 @@ Ao término inicie a segunda etapa.*/
 
 SELECT COUNT(*) FROM Produtos;
 
-![exer4]()
+![exer4](https://github.com/Ig0rFA/BancoDeDadosMySQL/blob/main/AC2%20Print/AC2%20ProdutosRelatorio.png)
 
 /*Gere um relatório informando o preço médio dos produtos*/
 
 	SELECT AVG(preco) as "preco_media" FROM Produtos;
 
-![exer5]()
+![exer5](https://github.com/Ig0rFA/BancoDeDadosMySQL/blob/main/AC2%20Print/AC2%20ProdutosDescricaoBusca.png)
 
 /*Selecione a média dos preços dos produtos em 2 grupos: perecíveis e não
 perecíveis*/
@@ -40,7 +39,7 @@ perecíveis*/
 	FROM Produtos
 	GROUP BY perecivel;
 
-![exer6]()
+![exer6](https://github.com/Ig0rFA/BancoDeDadosMySQL/blob/main/AC2%20Print/AC2ProdutosPereciveis.png)
 
 /*Selecione a média dos preços dos produtos agrupados pelo nome do produto*/
 
@@ -48,14 +47,14 @@ perecíveis*/
 	FROM Produtos
 	GROUP BY nome;
 
-![exer7]()
+![exer7](https://github.com/Ig0rFA/BancoDeDadosMySQL/blob/main/AC2%20Print/AC2ProdutosNomeMedia.png)
 
 /*Selecione a média dos preços e total em estoque dos produtos*/
 
 	SELECT AVG(preco) AS media_precos, SUM(estoque) AS "total_estoque"
 	FROM Produtos;
 
-![exer8]()
+![exer8](https://github.com/Ig0rFA/BancoDeDadosMySQL/blob/main/AC2%20Print/AC2ProdutosMediaTotal.png)
 
 /*Selecione o nome, marca e quantidade em estoque do produto mais caro*/
 
@@ -69,13 +68,13 @@ perecíveis*/
 	SELECT nome, preco FROM Produtos
 	WHERE preco > (SELECT AVG(preco) FROM Produtos);
 
-![exer10]()
+![exer10](https://github.com/Ig0rFA/BancoDeDadosMySQL/blob/main/AC2%20Print/AC2%20ProdutosPMedio.png)
 
 /*Selecione a quantidade de produtos de cada nacionalidade*/
 
 	SELECT COUNT(nacionalidade) AS "quantidade_produto_cada_nacionalidade"
 	FROM Produtos;	
 
- ![exer11]()
+ ![exer11](https://github.com/Ig0rFA/BancoDeDadosMySQL/blob/main/AC2%20Print/AC2ProdutosPNacionalidade.png)
 
  
