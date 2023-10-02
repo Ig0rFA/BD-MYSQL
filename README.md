@@ -30,7 +30,7 @@ SELECT COUNT(*) FROM Produtos;
 
 	SELECT AVG(preco) as "preco_media" FROM Produtos;
 
-![exer5]()
+![exer5](https://github.com/Ig0rFA/BancoDeDadosMySQL/blob/main/AC2%20Print/AC2%20ProdutosPMedio.png)
 
 /*Selecione a média dos preços dos produtos em 2 grupos: perecíveis e não
 perecíveis*/
@@ -61,14 +61,14 @@ perecíveis*/
 	SELECT nome, marca, estoque, MAX(preco) AS "produto_mais_caro"
 	FROM Produtos; 
 
-![exer9]()
+![exer9](https://github.com/Ig0rFA/BancoDeDadosMySQL/blob/main/AC2%20Print/AC2ProdutosNomeMedia.png)
  
 /*Selecione os produtos com preço acima da média*/
 
 	SELECT nome, preco FROM Produtos
 	WHERE preco > (SELECT AVG(preco) FROM Produtos);
 
-![exer10]()
+![exer10](https://github.com/Ig0rFA/BancoDeDadosMySQL/blob/main/AC2%20Print/AC2ProdutosAcimaMedia.png)
 
 /*Selecione a quantidade de produtos de cada nacionalidade*/
 
