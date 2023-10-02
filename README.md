@@ -17,7 +17,7 @@ preenchidos;
 
 Verifique se todos os dados foram inseridos;
 
-![exer3]()
+![exer3](https://github.com/Ig0rFA/BancoDeDadosMySQL/blob/main/AC2%20Print/AC2%20ProdutosDescricaoBusca.png)
 
 ## ETAPA 2:
 /*Gere um relatório informando quantos produtos estão cadastrados*/
@@ -30,7 +30,7 @@ SELECT COUNT(*) FROM Produtos;
 
 	SELECT AVG(preco) as "preco_media" FROM Produtos;
 
-![exer5](https://github.com/Ig0rFA/BancoDeDadosMySQL/blob/main/AC2%20Print/AC2%20ProdutosDescricaoBusca.png)
+![exer5]()
 
 /*Selecione a média dos preços dos produtos em 2 grupos: perecíveis e não
 perecíveis*/
