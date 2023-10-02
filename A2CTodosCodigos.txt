@@ -1,0 +1,28 @@
+Create table Produtos (  id_produto INT AUTO_INCREMENT PRIMARY KEY,  nome VARCHAR(50) NOT NULL,  preco DECIMAL(9,2) NOT NULL,  estoque INT NOT NULL,  perecivel CHAR NOT NULL,  marca VARCHAR(50),  nacionalidade VARCHAR(50)   )
+	
+INSERT INTO Produtos (nome, preco, estoque, perecivel, marca, nacionalidade) VALUES('refrigerante', 9.50, 1000, 'S','Coca Cola','Americana')
+
+INSERT INTO Produtos (nome, preco, estoque, perecivel, marca, nacionalidade) VALUES('leite', 4.15, 100, 'S','Piracanjuba','Brasileira')
+
+INSERT INTO Produtos (nome, preco, estoque, perecivel, marca, nacionalidade) VALUES('leite', 6.00, 50, 'S','Leite Ninho','Brasileira')
+
+INSERT INTO Produtos (nome, preco, estoque, perecivel, marca, nacionalidade) VALUES('refrigerante', 3.50, 5, 'S','Dolly','Brasileira')
+
+INSERT INTO Produtos (nome, preco, estoque, perecivel, marca, nacionalidade) VALUES('molho de tomate', 1.50, 500, 'S','Heinz','Brasileira')
+select * from Produtos LIMIT 0, 1000
+
+SELECT COUNT(*) FROM Produtos LIMIT 0, 1000
+
+SELECT AVG(preco) as "preco_media" FROM Produtos LIMIT 0, 1000
+
+SELECT perecivel, AVG(preco) AS "media_precos" FROM Produtos GROUP BY perecivel LIMIT 0, 1000
+
+SELECT nome, AVG(preco) AS "media_precos" FROM Produtos GROUP BY nome LIMIT 0, 1000
+
+SELECT AVG(preco) AS media_precos, SUM(estoque) AS "total_estoque" FROM Produtos LIMIT 0, 1000
+
+SELECT nome, marca, estoque, MAX(preco) AS "produto_mais_caro" FROM Produtos LIMIT 0, 1000
+
+SELECT nome, preco FROM Produtos WHERE preco > (SELECT AVG(preco) FROM Produtos) LIMIT 0, 1000
+
+SELECT COUNT(nacionalidade) AS "quantidade_produto_cada_nacionalidade" FROM Produtos LIMIT 0, 1000
