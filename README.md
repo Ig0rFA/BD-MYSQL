@@ -68,7 +68,7 @@ perecíveis*/
 	SELECT nome, preco FROM Produtos
 	WHERE preco > (SELECT AVG(preco) FROM Produtos);
 
-![exer10](https://github.com/Ig0rFA/BancoDeDadosMySQL/blob/main/AC2%20Print/AC2%20ProdutosPMedio.png)
+![exer10]()
 
 /*Selecione a quantidade de produtos de cada nacionalidade*/
 
