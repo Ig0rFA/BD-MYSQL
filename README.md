@@ -17,7 +17,7 @@ preenchidos;
 
 Verifique se todos os dados foram inseridos;
 
-![exer3]()
+![exer3](https://github.com/Ig0rFA/BancoDeDadosMySQL/blob/main/AC2%20Print/AC2%20ProdutosRelatorio.png)
 
 ## ETAPA 2:
 /*Gere um relatório informando quantos produtos estão cadastrados*/
