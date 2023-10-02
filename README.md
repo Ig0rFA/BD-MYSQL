@@ -61,7 +61,7 @@ perecíveis*/
 	SELECT nome, marca, estoque, MAX(preco) AS "produto_mais_caro"
 	FROM Produtos; 
 
-![exer9]()
+![exer9](https://github.com/Ig0rFA/BancoDeDadosMySQL/blob/main/AC2%20Print/AC2ProdutosCaro.png)
  
 /*Selecione os produtos com preço acima da média*/
 
