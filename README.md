@@ -16,21 +16,6 @@ preenchidos;
 Verifique se todos os dados foram inseridos;
 Ao término inicie a segunda etapa.*/
 
-INSERT INTO Produtos (nome, preco, estoque, perecivel, marca, nacionalidade)
-VALUES('sabonete', 5.00, 8, 'N','Jhonson','Brasileira');
-
-INSERT INTO Produtos (nome, preco, estoque, perecivel, marca, nacionalidade)
-VALUES('shampoo', 9.00, 14, 'N','Jhonson','Brasileira');
-	
-INSERT INTO Produtos (nome, preco, estoque, perecivel, marca, nacionalidade)
-VALUES('leite', 4.90, 32, 'S','Hercules','Brasileira');
-
-INSERT INTO Produtos (nome, preco, estoque, perecivel, marca, nacionalidade)
-VALUES('refrigerante', 3.50, 4, 'S','coca-cola','Brasileira');
-
-INSERT INTO Produtos (nome, preco, estoque, perecivel, marca, nacionalidade)
-VALUES('esponja de aco', 1.50, 22, 'N','Bombril','Brasileira');
-
 ![exer2]()
 
 ![exer3]()
