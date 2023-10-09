@@ -1,4 +1,4 @@
-# BancoDeDadosMySQL
+# BD-MYSQL
 ## Descrição
 Atividades solicitadas em sala de aula para avaliaçao.
 ## ETAPA 1:
